@@ -1,1 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1128px;
+    margin: 0 auto;
+}
+.primary-bg{
+    background-color:#f1f1f1 ;
+}
+.primary-font{
+    font-family: 'poppins', arial, sans-serif;
+}
+/* navbar styles */
+.nav-parent{
+    display: flex;
+    margin: 50px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-child input[type="text"]{
+    width: 508px;
+    height: 48px;
+    border-radius: 66px;
+    padding: 12px 0 12px 28px;
+    font-style: italic;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.nav-child input::placeholder{
+    color: #ccc;
+}
+.search-parent{
+    position: relative;
+}
+.nav-child .nav-icon{
+    position: absolute;
+    top:12px;
+    right: 13px;
+    color: #ccc;
+}
+.nav-child ul{
+    display: flex;
+    gap: 24px;
+}
+.nav-child li a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #707070;
+    transition: 0.5s;
+}
+.nav-child li:hover a{
+    padding: 12px 20px;
+    background-color: #707070;
+    color: white;
+    border-radius:10px;
+}
